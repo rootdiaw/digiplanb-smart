@@ -41,6 +41,7 @@ public class OptionRestController {
         Option opt= optionService.getOptionParId(id);
 
         opt.setObjectifmacrom(option.getObjectifmacrom());
+        opt.setPlateformes(option.getPlateformes());
 
         return optionService.updateOption(option);
     }
