@@ -55,6 +55,10 @@ public class PlateformeController {
     public Plateforme updatePlateforme(@PathVariable("id") Long id,@RequestBody Plateforme plateforme){
         Plateforme plat= plateformeService.getPlateformeParId(id);
         plat.setHeurepost(plateforme.getHeurepost());
+        plat.setNombrepost(plateforme.getNombrepost());
+        plat.setJourpost(plateforme.getJourpost());
+        plat.setStyleeditorial(plateforme.getStyleeditorial());
+        plat.setContenus(plateforme.getContenus());
         plat.setFormat(plateforme.getFormat());
         plat.setNom(plateforme.getNom());
 

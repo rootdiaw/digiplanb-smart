@@ -21,7 +21,11 @@ public class Plateforme {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idplateforme;
     private String nom;
-    private  String heurepost;
+   private  String nombrepost;
+   private  String jourpost;
+   private  String heurepost;
+   private  String contenus;
     private  String format;
+    private  String styleeditorial;
 
 }
